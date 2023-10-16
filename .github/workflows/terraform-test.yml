@@ -3,12 +3,13 @@ name: 'Terraform-Test'
 on:
   push:
     branches: [ "main" ]
-    
+
+
 jobs:
   terraform-test:
     name: 'Terraform Test'
     runs-on: ubuntu-latest
-    
+
     steps:
     # Checkout the repository to the GitHub Actions runner
     - name: Checkout
